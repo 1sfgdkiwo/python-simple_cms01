@@ -10,9 +10,9 @@ db = SQLAlchemy(app)
 # db.create_all()
 
 page = Page()
-x=page.query.filter_by(title='Homepage').first()
+x=page.query.filter_by(title='homepage').first()
 if x is None:
-    page.title='Homepage'
+    page.title='homepage'
     page.contents='<h1> Selamat datang di dunia python </h1>'
     page.is_homepage=True
     db.session.add(page)
