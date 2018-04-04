@@ -18,16 +18,6 @@ if x is None:
     db.session.add(page)
     db.session.commit()
 
-# x1=page.query.filter_by(title='Hallo Dunia').first()
-# if x1 is None:
-#     page.title='Hallo Dunia'
-#     page.contents='<h1> Hallo Dunia ? apa kabar... </h1>'
-#     page.is_homepage=False
-#     page.url='page/hallo-dunia'
-#     page.image_id=1
-#     db.session.add(page)
-#     db.session.commit()
-
 gbr=Image()
 x=gbr.query.filter_by(path='beranda.jpeg').first()
 if x is None:
